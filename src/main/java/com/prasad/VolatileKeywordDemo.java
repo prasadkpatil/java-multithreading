@@ -2,12 +2,12 @@ package com.prasad;
 
 import java.util.Scanner;
 
-class Processor extends Thread{
+class Processor extends Thread {
     private volatile boolean running = true;
 
     @Override
     public void run() {
-        while(running){
+        while (running) {
             System.out.println("Hello ");
             try {
                 Thread.sleep(100);
@@ -22,7 +22,7 @@ class Processor extends Thread{
     }
 }
 
-public class VolatileDemo {
+public class VolatileKeywordDemo {
     public static void main(String[] args) {
         Processor p = new Processor();
         p.start();
