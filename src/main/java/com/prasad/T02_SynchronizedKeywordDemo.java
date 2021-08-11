@@ -1,6 +1,6 @@
 package com.prasad;
 
-public class SynchronizedKeywordDemo {
+public class T02_SynchronizedKeywordDemo {
     private int count = 0;
 
     private synchronized void increment(){
@@ -40,7 +40,11 @@ public class SynchronizedKeywordDemo {
     }
 
     public static void main(String[] args) {
-        SynchronizedKeywordDemo s = new SynchronizedKeywordDemo();
+        long startTime = System.currentTimeMillis();
+        T02_SynchronizedKeywordDemo s = new T02_SynchronizedKeywordDemo();
         s.doWork();
+        long endTime = System.currentTimeMillis();
+
+        System.out.println("Time taken: " + (endTime - startTime));
     }
 }

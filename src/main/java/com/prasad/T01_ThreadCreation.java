@@ -4,7 +4,7 @@ package com.prasad;
  * Hello world!
  *
  */
-public class ThreadCreation {
+public class T01_ThreadCreation {
     public static void main(String[] args) {
         // Extending Thread class
         System.out.println("Threads created using extending Thread class");
